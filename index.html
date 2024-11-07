@@ -1,12 +1,12 @@
 <!--
 Requirements
-[  ] Google Font OR Uploaded Font
-[  ] font-size OR font-style 
-[  ] Five CSS Rules
-[  ] Three Images
+[ yes ] Google Font OR Uploaded Font
+[ yes ] font-size OR font-style 
+[ yes ] Five CSS Rules
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Include a Static Background Image
+[ yes ] Feature 1 - Include a Static Background Image
 [ no ] Feature 2 - Use a unique border-radius
 [ no ] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
@@ -14,17 +14,127 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-image: url("https://www.apo-tokyo.org/wp-content/uploads/2019/08/Blue-ocean-strategy-featured-image.jpg");
+        background-size: cover;
+        margin: 0;
+        color: #333;
+        font-size: 16px;
+      }
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .header {
+        text-align: center;
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family: "Playfair Display", serif;
+      }
 
-  </style>
-</head>
-<body>
+      .introduction {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
 
- 
+      .products,
+      .blog-posts {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+      }
 
-</body>
+      .item {
+        width: 30%;
+        padding: 15px;
+        margin: 10px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        background-color: #fff;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .social-links {
+        text-align: center;
+        margin: 20px;
+      }
+
+      .social-links a {
+        margin: 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #0077b6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to My travel page</h1>
+    </div>
+
+    <div class="introduction">
+      <h2>About My Brand</h2>
+      <p>
+        I'm your favorite youtuber and your guide to the most extravagant and
+        exclusive travel experiences around the world. From private jet
+        adventures to five-star resorts, I bring you the best in high-end
+        travel.
+      </p>
+    </div>
+
+    <div class="products">
+      <div class="item">
+        <img
+          src="https://www.flyair7.com/wp-content/uploads/2023/12/GulfstreamG450_interior-3.jpg"
+          height="400"
+        />
+        <h3>Private Jet Experience</h3>
+        <p>Fly in style with our exclusive private jet packages.</p>
+      </div>
+      <div class="item">
+        <img
+          src="https://www.lakeaustin.com/content/uploads/2019/11/conde19.jpg"
+        />
+        <h3>Luxury Resort Stays</h3>
+        <p>Stay at the world's most luxurious and breathtaking resorts.</p>
+      </div>
+      <div class="item">
+        <img
+          src="https://cache.marriott.com/content/dam/marriott-renditions/SYXEB/syxeb-spa-5353-hor-wide.jpg"
+          height="400"
+        />
+        <h3>Luxury Spa Retreats</h3>
+        <p>Relax and rejuvenate at exclusive spa destinations.</p>
+      </div>
+    </div>
+
+    <div class="blog-posts">
+      <div class="item">
+        <h3>A Day in My Life</h3>
+        <p>
+          Ever wondered what a day in the life of me looks like? From morning
+          yoga on a Bali beach to a gourmet dinner in Paris, experience it all.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Top 5 Travel Destinations for 2024</h3>
+        <p>
+          Discover my hand-picked list of the hottest travel spots for next
+          year. Luxury awaits!
+        </p>
+      </div>
+      <div class="item">
+        <h3>Travel Tips for the Elite</h3>
+        <p>
+          Get my exclusive travel tips to make your next journey unforgettable.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
